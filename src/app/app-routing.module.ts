@@ -1,4 +1,4 @@
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { PlateformeComponent } from './plateforme/plateforme.component';
@@ -22,7 +22,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-  RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes)
   ],
 
   exports: [

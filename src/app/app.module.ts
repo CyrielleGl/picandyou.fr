@@ -3,9 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './core/components/navbar/navbar.component';
-import { HeaderComponent } from './core/components/header/header.component';
-import { FooterComponent } from './core/components/footer/footer.component';
+import { CoreModule } from './core/core.module';
+
 import { HomeComponent } from './home/home.component';
 import { PlateformeComponent } from './plateforme/plateforme.component';
 import { MaquettesComponent } from './maquettes/maquettes.component';
@@ -16,9 +15,6 @@ import { ContactComponent } from './contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    HeaderComponent,
-    FooterComponent,
     HomeComponent,
     PlateformeComponent,
     MaquettesComponent,
@@ -28,7 +24,8 @@ import { ContactComponent } from './contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
