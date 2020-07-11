@@ -1,7 +1,7 @@
-<app-header></app-header>
+<app-header [appTitle]="appTitle"></app-header>
 
 <app-navbar></app-navbar>
 
   <router-outlet></router-outlet>
 
-<app-footer [yearNow]="yearNow"></app-footer>
+<app-footer [yearNow]="yearNow" [appTitle]="appTitle"></app-footer>

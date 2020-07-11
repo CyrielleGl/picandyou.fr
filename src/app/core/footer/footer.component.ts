@@ -10,6 +10,9 @@ export class FooterComponent implements OnInit {
   @Input()
   yearNow: string;
 
+  @Input()
+  appTitle: string;
+
   constructor() { }
 
   ngOnInit(): void {
