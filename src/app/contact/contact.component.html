@@ -2,56 +2,46 @@
 
 <div style="text-align: center;">
   <h5>Vous souhaitez en savoir plus ?</h5>
-  <p>Contactez-nous !</p>
+  <p>Nous donner votre avis ? Collaborer sur le projet ?</p>
+  <br>
+  <h5>Contactez l'équipe ! 📧</h5>
 </div>
 
 <br>
 
-<form class="contact-form">
+<form class="contact-form" [formGroup]="FormData" (ngSubmit)="onsubmit(FormData.value)">
 
   <div class="form-group col-md-6">
       <label>Prénom</label>
-      <input type="text" class="form-control" placeholder="Votre prénom">
+      <input type="text" class="form-control" name="Prenom" formControlName="Prenom" placeholder="Votre prénom">
   </div>
 
   <div class="form-group col-md-6">
       <label>Nom</label>
-      <input type="text" class="form-control" placeholder="Votre nom">
+      <input type="text" class="form-control" name="Nom" formControlName="Nom" placeholder="Votre nom">
   </div>
 
 
     <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Votre email">
-    </div>
-
-    <div class="form-group col-md-6">
-        <label for="inputState">Pays</label>
-        <select id="inputState" class="form-control">
-          <option selected>Choisir...</option>
-          <option>Allemagne</option>
-          <option>Etats-Unis</option>
-          <option>France</option>
-          <option>Grande Bretagne</option>
-          <option>Autre</option>
-        </select>
+      <label for="inputEmail">Email</label>
+      <input type="email" class="form-control" id="inputEmail" name="Email" formControlName="Email" placeholder="Votre email">
     </div>
 
     <div class="form-group col-md-6">
       <label for="FormControlTextarea">Votre message</label>
-    <textarea class="form-control" id="FormControlTextarea" rows="3" placeholder="Ecrivez ici"></textarea>
+    <textarea class="form-control" id="FormControlTextarea" rows="3" name="Message" formControlName="Message" placeholder="Ecrivez ici"></textarea>
     </div>
 
   <div class="form-group col-md-6">
     <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <input class="form-check-input" type="checkbox" id="gridCheck" name="Check" formControlName="Check">
       <label class="form-check-label" for="gridCheck">
-        Je souhaite être informé de la sortie de la plateforme Pic&You !
+        Je souhaite être informé de la sortie de Pic&You !
       </label>
     </div>
   </div>
 
-  <button type="submit" id="form-btn" class="btn btn-primary">Envoyer</button>
+  <button type="submit" id="form-btn" class="btn btn-primary" [disabled]="!FormData.valid">Envoyer</button>
 
 </form>
 
