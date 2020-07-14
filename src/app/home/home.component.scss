@@ -2,7 +2,7 @@ h2 {
   text-align: center;
   color: var(--carbon-primary);
   -webkit-font-smoothing: antialiased;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h5 {
@@ -14,4 +14,18 @@ h5 {
 a {
   text-decoration: none;
   color: var(--secondary);
+}
+
+.src {
+  background-image: url("../../assets/visuels/visuel-home-1.JPG");
+  width: 30rem;
+  height: 15rem;
+  background-size: cover;
+  background-position: top center;
+}
+
+.container-src {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
