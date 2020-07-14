@@ -11,10 +11,10 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { HomeComponent } from './home/home.component';
 import { PlateformeComponent } from './plateforme/plateforme.component';
-import { MaquettesComponent } from './maquettes/maquettes.component';
 import { TeamComponent } from './team/team.component';
 import { SoutienComponent } from './soutien/soutien.component';
 import { ContactComponent } from './contact/contact.component';
+import { MaquetteInteractiveComponent } from './maquette-interactive/maquette-interactive.component';
 
 @NgModule({
 
@@ -22,10 +22,10 @@ import { ContactComponent } from './contact/contact.component';
     AppComponent,
     HomeComponent,
     PlateformeComponent,
-    MaquettesComponent,
     TeamComponent,
     SoutienComponent,
-    ContactComponent
+    ContactComponent,
+    MaquetteInteractiveComponent
   ],
 
   imports: [
@@ -33,7 +33,7 @@ import { ContactComponent } from './contact/contact.component';
     AppRoutingModule,
     CoreModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
 
   providers: [
