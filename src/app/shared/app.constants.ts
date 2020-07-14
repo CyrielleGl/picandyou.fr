@@ -4,4 +4,8 @@ export class AppConstants {
     return 'Pic&You';
   }
 
+  public static get urlLogoWhite(): string {
+    return 'assets/visuels/picandyou-white.png';
+  }
+
 }

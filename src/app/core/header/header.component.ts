@@ -10,6 +10,9 @@ export class HeaderComponent implements OnInit {
   @Input()
   appTitle: string;
 
+  @Input()
+  urlLogoWhite: string;
+
   constructor() { }
 
   ngOnInit(): void {
