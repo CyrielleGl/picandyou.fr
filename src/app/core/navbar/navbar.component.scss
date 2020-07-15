@@ -1,9 +1,12 @@
 #collapsibleNavbar {
   align-items: center;
   justify-content: center;
-
 }
 
-.navbar {
-  border-top: #dddddd solid 0.06rem;
+.sticky{
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 10;
+  width: 100%;
 }
