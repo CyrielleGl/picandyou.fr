@@ -8,8 +8,6 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { MaquetteInteractiveComponent } from './maquette-interactive/maquette-interactive.component';
 
-
-
 const routes: Routes = [
   { path: 'plateforme', component: PlateformeComponent },
   { path: 'maquette-interactive', component: MaquetteInteractiveComponent },
@@ -17,8 +15,7 @@ const routes: Routes = [
   { path: 'soutien', component: SoutienComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'home', component: HomeComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
-
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({
