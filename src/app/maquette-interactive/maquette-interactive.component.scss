@@ -24,3 +24,18 @@ h6 {
 .espace-maquette {
   margin: 2rem;
 }
+
+a {
+  text-decoration: none;
+}
+
+div.espace-avis {
+  border: var(--primary) solid 0.1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  padding-bottom: 0rem;
+}
+
+div.espace-avis:hover {
+  background: rgba(185, 113, 89, 0.2);
+}

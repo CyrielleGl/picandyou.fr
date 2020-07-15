@@ -11,6 +11,10 @@ h5 {
   -webkit-font-smoothing: antialiased;
 }
 
+h6 {
+  color: var(--secondary);
+}
+
 a {
   text-decoration: none;
   color: var(--secondary);
