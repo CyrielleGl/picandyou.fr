@@ -10,36 +10,7 @@
 
     <br>
 
-  <p>Après avoir cliqué sur les trois flèches du bas, vous atterissez sur la <strong>page d'inscription / connexion</strong>. Vous pouvez entrer vos informations pour vous inscrire, ou bien vous connecter avec votre identifiant et mot de passe. <strong>En cas d'oubli du mot de passe</strong>, il faudra suivre la procédure indiquée dans "Mot de passe oublié ?"</p>
-
-      <img src="../../assets/visuels/maquette/inscription.png" class="responsive-img">
-
-
-    <br>
-
-  <p>Vous voici sur la <strong>Home</strong>.</p>
-    <p><strong>Votre messagerie</strong> se trouve sur la gauche, divisée en 2 sections : les messages individuels, et les messages de groupe. <strong>Votre fil d'actualité</strong> se trouve au centre, et une barre de recherche est disponible dans le header.</p>
-      <p><strong>Votre profil</strong> est accessible en haut à droite, lorsque vous cliquez sur votre prénom situé à droite de votre photo de profil. Juste en-dessous, un bouton permet de vous déconnecter.</p>
-        <p>La partie droite de la plateforme permet d'accéder aux <strong>fonctionnalités mères de la communauté</strong>&nbsp;: un moteur de recherche puissant, avec de nombreux filtres disponibles, votre répertoire de contacts, votre portfolio, vos groupes de travail, vos posts et votre agenda. Quelques publicités pourront être visibles au début du lancement de l'application, mais sont vouées à disparaître.</p>
-
-      <img src="../../assets/visuels/maquette/home.png" class="responsive-img">
-
-    <br>
-
-  <p>Visitons maintenant le <strong>profil</strong>.</p>
-    <p><strong>Vos informations principales</strong> (location, déplacements, date de naissance, genre, activités, spécialisations, site web) sont visibles sous votre photo de couverture, dans un espace dédié. La <b>modification de ces informations</b> se fait en cliquant sur le stylo présent à droite de chacune d'entre elles.</p>
-      <p>Sous cet espace, <strong>quatre onglets permettent à vos contacts de mieux vous connaître</strong> : votre portfolio, vos groupes de travail, vos posts, vos contacts. Vous pouvez <strong>choisir la visibilité</strong> de chacun de ces onglets (public, amis, privé). Pour <strong>modifier ces onglets</strong>, rendez-vous sur la barre de navigation tout à droite de la plateforme.</p>
-
-      <img src="../../assets/visuels/maquette/profil.png" class="responsive-img">
-
-
-    <br>
-
-<!--Présenter les 6 derniers onglets / Right Nav-->
-
-  <p>Les boutons <b>Paramètres</b> et <b>Aide</b> sont présents dans le footer, en bas de page, respectivement à gauche et à droite.</p>
-
-    <br>
+<app-vue *ngFor="let vue of vues" [vue]="vue"></app-vue>
 
   <p style="font-size: 0.8rem; color: crimson;">[--- Les fonctionnalités mères de l'application (menu de droite) sont en cours de maquettage. ⌨ ---]</p>
 
@@ -59,8 +30,11 @@
 
   <img src="../../assets/visuels/pictos/contact.png" class="picto-src">
 
-  <p style="color: var(--secondary); font-weight: 650;">Alors, qu'en pensez-vous ?</p>
-    <p>Si vous souhaitez nous <b>donner votre avis</b>, écrivez-nous <b><a href="contact">un message ici ! 📧</a></b></p>
-      <p style="font-size: 0.8rem;">Votre avis peut nous apporter beaucoup sur la conception du design de l'application. Nous souhaitons que Pic&You soit <b style="color: var(--secondary);">votre plateforme</b> de collaborations, <b style="color: var(--secondary);">à votre image</b>.</p>
-    <p>Si vous souhaitez <b>soutenir la mise en production</b> de l'application, <b><a href="soutien">rendez-vous sur cette page 🧡</a></b></p>
+  <div>
+    <p style="color: var(--secondary); font-weight: 650;">Alors, qu'en pensez-vous ?</p>
+      <p>Si vous souhaitez nous <b>donner votre avis</b>, écrivez-nous <b><a href="contact">un message ici ! 📧</a></b></p>
+        <p style="font-size: 0.8rem;">Votre avis peut nous apporter beaucoup sur la conception du design de l'application. Nous souhaitons que Pic&You soit <b style="color: var(--secondary);">votre plateforme</b> de collaborations, <b style="color: var(--secondary);">à votre image</b>.</p>
+      <p>Si vous souhaitez <b>soutenir la mise en production</b> de l'application, <b><a href="soutien">rendez-vous sur cette page 🧡</a></b></p>
+  </div>
+
 </div>

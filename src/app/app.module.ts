@@ -16,6 +16,7 @@ import { ContactComponent } from './contact/contact.component';
 import { MaquetteInteractiveComponent } from './maquette-interactive/maquette-interactive.component';
 import { WorkerComponent } from './team/worker/worker.component';
 import { BlocComponent } from './home/bloc/bloc.component';
+import { VueComponent } from './plateforme/vue/vue.component';
 
 @NgModule({
 
@@ -28,7 +29,8 @@ import { BlocComponent } from './home/bloc/bloc.component';
     ContactComponent,
     MaquetteInteractiveComponent,
     WorkerComponent,
-    BlocComponent
+    BlocComponent,
+    VueComponent
   ],
 
   imports: [
