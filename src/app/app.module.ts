@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
@@ -15,6 +14,7 @@ import { TeamComponent } from './team/team.component';
 import { SoutienComponent } from './soutien/soutien.component';
 import { ContactComponent } from './contact/contact.component';
 import { MaquetteInteractiveComponent } from './maquette-interactive/maquette-interactive.component';
+import { WorkerComponent } from './team/worker/worker.component';
 
 @NgModule({
 
@@ -25,7 +25,8 @@ import { MaquetteInteractiveComponent } from './maquette-interactive/maquette-in
     TeamComponent,
     SoutienComponent,
     ContactComponent,
-    MaquetteInteractiveComponent
+    MaquetteInteractiveComponent,
+    WorkerComponent
   ],
 
   imports: [
@@ -33,7 +34,7 @@ import { MaquetteInteractiveComponent } from './maquette-interactive/maquette-in
     AppRoutingModule,
     CoreModule,
     ReactiveFormsModule,
-    HttpClientModule,
+    HttpClientModule
   ],
 
   providers: [
@@ -43,3 +44,4 @@ import { MaquetteInteractiveComponent } from './maquette-interactive/maquette-in
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
