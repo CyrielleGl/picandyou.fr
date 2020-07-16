@@ -15,6 +15,7 @@ import { SoutienComponent } from './soutien/soutien.component';
 import { ContactComponent } from './contact/contact.component';
 import { MaquetteInteractiveComponent } from './maquette-interactive/maquette-interactive.component';
 import { WorkerComponent } from './team/worker/worker.component';
+import { BlocComponent } from './home/bloc/bloc.component';
 
 @NgModule({
 
@@ -26,7 +27,8 @@ import { WorkerComponent } from './team/worker/worker.component';
     SoutienComponent,
     ContactComponent,
     MaquetteInteractiveComponent,
-    WorkerComponent
+    WorkerComponent,
+    BlocComponent
   ],
 
   imports: [

@@ -1,8 +1,10 @@
-<div class="container" style="margin-top:30px">
+<div class="container">
 
       <h2>Bienvenue sur le site d'informations de <span style="color: var(--primary);">Pic&You</span> !</h2>
-        <div style="text-align: center;">
+        <div>
+
           <br>
+
             <h6>La gestion de vos collaborations</h6>
               <div class="container-src">
                 <div class="src"></div>
@@ -10,34 +12,13 @@
               <div style="font-size: 0.5rem;"><p>Photographe : Manon Huré | Modèle : Khäly</p></div>
 
               <br>
-                <p><strong>Pic&You</strong> est une future plateforme qui <strong>permettra aux créatifs</strong> (photographes, designers, modèles, stylistes, maquilleurs, vidéastes, etc) <strong>de travailler ensemble sur une plateforme dédiée</strong> à la gestion de leurs collaborations.</p>
+
+            <p><strong>Pic&You</strong> est une future plateforme qui <strong>permettra aux créatifs</strong> (photographes, designers, modèles, stylistes, maquilleurs, vidéastes, etc) <strong>de travailler ensemble sur un espace dédié</strong> à la gestion de leurs collaborations.</p>
         </div>
 
       <br>
 
-      <h5 style="text-align: center;">Des connexions optimisées 🤝🏻</h5>
-        <div style="text-align: center;">
-          <p>Les connexions entre tous les acteurs de l'image seront optimisées grâce à un <strong>espace dédié présenté comme un réel réseau social.</strong> La plateforme est pensée pour <strong>faciliter la gestion de ses collaborations : </strong>groupes de travail, messagerie instantanée, portfolio, agenda - tout est là !</p>
-            <a href="plateforme"><p>👉🏻 En savoir plus sur la plateforme</p></a>
-        </div>
-
-      <br>
-
-      <h5 style="text-align: center;">En cours de développement... 💻</h5>
-        <div style="text-align: center;">
-          <p>La plateforme Pic&You sera accessible sur <strong>www.picandyou.com</strong> à partir de juin 2022.</p>
-            <p>«&nbsp;Juin 2022&nbsp;? C'est dans longtemps&nbsp;! Pourquoi pas avant&nbsp;?&nbsp;»</p>
-              <p>A l'origine, Pic&You est un projet d'école, qui permettra à l'équipe de développeurs de valider leur passage en dernière année de Master. Mais plus qu'un cas d'école, Pic&You sera une véritable start-up, dont la vocation est de <strong>faciliter la vie des créatifs sur le long terme.</strong></p>
-                 <a href="maquette-interactive"><p>👉🏻 Testez la maquette interactive !</p></a>
-        </div>
-
-      <br>
-
-      <h5 style="text-align: center;">Offrez-nous un café ! ☕</h5>
-        <div style="text-align: center;">
-          <p>Pour transformer un projet d'école en véritable start-up, il faut un certain financement, me direz-vous. En effet, car il faudra alors dépenser de l'argent pour l'environnement technique, pour la communication, etc. C'est pourquoi, si vous souhaitez <b>nous soutenir dans cette ambition</b>, vous pouvez nous offrir un café ici !<!--Ajouter lien ko-fi--></p>
-            <a href="https://ko-fi.com/picandyou" target="_blank"><p>👉🏻 Offrir un café 🧡</p></a>
-        </div>
+      <app-bloc *ngFor="let bloc of bloc" [bloc]="bloc"></app-bloc>
 
       <br>
 
