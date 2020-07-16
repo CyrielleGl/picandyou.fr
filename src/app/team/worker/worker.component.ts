@@ -7,8 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class WorkerComponent implements OnInit {
 
-@Input()
-worker: any;
+  @Input()
+  worker: any;
 
   constructor() { }
 
