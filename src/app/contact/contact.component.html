@@ -1,0 +1,54 @@
+<main>
+
+  <div style="text-align: center;">
+      <h5>Vous souhaitez en savoir plus ?</h5>
+      <p>Nous donner votre avis ? Collaborer sur le projet ?</p>
+    <br>
+      <div class="container-src">
+        <div class="src"></div>
+      </div>
+      <div style="font-size: 0.5rem;"><p>Image par <a href="https://pixabay.com/fr/users/MIH83-464187/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1213042">Maret Hosemann</a> de <a href="https://pixabay.com/fr/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1213042">Pixabay</a></p></div>
+    <br>
+      <h5 style="color: var(--primary);">Contactez l'équipe ! 📧</h5>
+  </div>
+
+  <br>
+
+  <form class="contact-form" [formGroup]="FormData" (ngSubmit)="onsubmit(FormData.value)">
+
+    <div class="form-group col-md-6">
+        <label>Prénom</label>
+        <input type="text" class="form-control" name="Prenom" formControlName="Prenom" placeholder="Votre prénom">
+    </div>
+
+    <div class="form-group col-md-6">
+        <label>Nom</label>
+        <input type="text" class="form-control" name="Nom" formControlName="Nom" placeholder="Votre nom">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="inputEmail">Email</label>
+      <input type="email" class="form-control" id="inputEmail" name="Email" formControlName="Email" placeholder="Votre email">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="FormControlTextarea">Votre message</label>
+    <textarea class="form-control" id="FormControlTextarea" rows="3" name="Message" formControlName="Message" placeholder="Ecrivez ici"></textarea>
+    </div>
+
+    <div class="form-group col-md-6">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck" name="Check" formControlName="Check">
+        <label class="form-check-label" for="gridCheck">
+          Je souhaite être informé de la sortie de Pic&You !
+        </label>
+      </div>
+    </div>
+
+    <button type="submit" id="form-btn" class="btn btn-primary" [disabled]="!FormData.valid">Envoyer</button>
+
+  </form>
+
+  <br>
+
+</main>

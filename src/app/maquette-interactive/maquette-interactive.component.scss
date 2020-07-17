@@ -1,0 +1,43 @@
+.maquette-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.iframe {
+margin-top: 0.1rem;
+}
+
+h5 {
+  text-align: center;
+  color: var(--secondary);
+}
+
+h6 {
+  color: var(--secondary);
+}
+
+.intro-maquette {
+  text-align: center;
+}
+
+.espace-maquette {
+  margin: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+div.espace-avis {
+  border: var(--primary) dashed 0.1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  padding-bottom: 0rem;
+}
+
+div.espace-avis:hover {
+  background: rgba(127, 77, 114, 0.2);
+  color: var(--primary);
+}

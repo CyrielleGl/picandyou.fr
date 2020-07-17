@@ -1,0 +1,19 @@
+<ng-container *ngIf="worker.display">
+  <table>
+    <tr>
+      <td>
+        <div class="container-src">
+          <div class="photo" [ngStyle]="{'background-image': 'url('+ worker.photo +')'}"></div>
+        </div>
+      </td>
+      <td>
+        <ul>
+          <li class="name">{{ worker.name }}</li>
+          <li class="job">{{ worker.job }}</li>
+          <li class="describe" style="white-space: pre-line;" [innerHTML]="worker.describe"></li>
+        </ul>
+      </td>
+    </tr>
+    <br>
+  </table>
+</ng-container>

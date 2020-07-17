@@ -1,0 +1,42 @@
+.src-home {
+  background-image: url(../../assets/visuels/maquette/home.png);
+  width: 100%;
+  height: auto;
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+  max-width: 60rem;
+  margin-bottom: 2rem;
+}
+
+h5 {
+  color: var(--secondary);
+}
+
+.btn-maquette {
+  border: 0.1rem dashed var(--primary);
+  border-radius: 1rem;
+  max-width: 20rem;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1rem 1rem 0.6rem 1rem;
+  background: rgba(127, 77, 114, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--secondary);
+}
+
+.picto-src {
+  max-width: 4.5rem;
+  opacity: 1;
+  padding-bottom: 0.8rem;
+}

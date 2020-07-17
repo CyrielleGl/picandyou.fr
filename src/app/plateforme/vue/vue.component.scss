@@ -1,0 +1,19 @@
+.responsive-img {
+  width: 100%;
+  height: auto;
+  max-width: 60rem;
+  margin-bottom: 2rem;
+}
+
+.describe {
+  font-size: 0.9rem;
+  -webkit-font-smoothing: antialiased;
+  padding-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  -webkit-font-smoothing: antialiased;
+  color: var(--primary);
+}

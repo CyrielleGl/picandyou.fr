@@ -1,0 +1,41 @@
+tr {
+  vertical-align: top;
+}
+
+li {
+  list-style: none;
+}
+
+.container-src {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  color: var(--primary);
+}
+
+.job {
+  font-size: 0.8rem;
+  -webkit-font-smoothing: antialiased;
+  color: var(--secondary);
+}
+
+.describe {
+  font-size: 0.9rem;
+  -webkit-font-smoothing: antialiased;
+  padding-top: 0.5rem;
+}
+
+.photo {
+  width: 10rem;
+  height: 8rem;
+  border-radius: 1rem;
+  border: 0.1rem solid var(--primary);
+  background-size: cover;
+  background-position: top center;
+}
