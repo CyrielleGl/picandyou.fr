@@ -10,4 +10,5 @@ export class AppComponent {
   yearNow = new Date().getFullYear().toString();
   appTitle = AppConstants.appTitle;
   urlLogoWhite = AppConstants.urlLogoWhite;
+  pictoInsta = AppConstants.pictoInsta;
 }

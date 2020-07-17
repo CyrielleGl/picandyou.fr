@@ -8,4 +8,8 @@ export class AppConstants {
     return 'assets/visuels/picandyou-white.png';
   }
 
+  public static get pictoInsta(): string {
+    return 'assets/visuels/pictos/white-instagram.png';
+  }
+
 }

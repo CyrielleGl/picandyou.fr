@@ -13,6 +13,9 @@ export class FooterComponent implements OnInit {
   @Input()
   appTitle: string;
 
+  @Input()
+  pictoInsta: string;
+
   constructor() { }
 
   ngOnInit(): void {
