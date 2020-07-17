@@ -1,25 +1,23 @@
-<div class="container">
+<main>
 
-      <h2>Bienvenue sur le site d'informations de <span style="color: var(--primary);">Pic&You</span> !</h2>
-        <div>
+  <h2>Bienvenue sur le site d'informations de <span style="color: var(--primary);">Pic&You</span> !</h2>
+    <div>
+
+      <br>
+
+        <h6>La gestion de vos collaborations</h6>
+          <div class="container-src">
+            <div class="src"></div>
+          </div>
+          <div style="font-size: 0.5rem;"><p>Photographe : Manon Huré | Modèle : Khäly</p></div>
 
           <br>
 
-            <h6>La gestion de vos collaborations</h6>
-              <div class="container-src">
-                <div class="src"></div>
-              </div>
-              <div style="font-size: 0.5rem;"><p>Photographe : Manon Huré | Modèle : Khäly</p></div>
+        <p><strong>Pic&You</strong> est une future plateforme qui <strong>permettra aux créatifs</strong> (photographes, designers, modèles, stylistes, maquilleurs, vidéastes, etc) <strong>de travailler ensemble sur un espace dédié</strong> à la gestion de leurs collaborations.</p>
+    </div>
 
-              <br>
+  <br>
 
-            <p><strong>Pic&You</strong> est une future plateforme qui <strong>permettra aux créatifs</strong> (photographes, designers, modèles, stylistes, maquilleurs, vidéastes, etc) <strong>de travailler ensemble sur un espace dédié</strong> à la gestion de leurs collaborations.</p>
-        </div>
+  <app-bloc *ngFor="let bloc of bloc" [bloc]="bloc"></app-bloc>
 
-      <br>
-
-      <app-bloc *ngFor="let bloc of bloc" [bloc]="bloc"></app-bloc>
-
-      <br>
-
-</div>
+</main>
