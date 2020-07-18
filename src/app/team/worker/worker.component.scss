@@ -35,6 +35,11 @@
   -webkit-font-smoothing: antialiased;
   padding-top: 0.5rem;
   white-space: pre-line;
-  text-align: justify;
 }
 
+.citation {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary);
+  font-family: auto;
+}

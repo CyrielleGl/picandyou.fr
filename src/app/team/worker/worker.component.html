@@ -8,7 +8,9 @@
       <span class="name">{{ worker.name }}</span><br>
       <span class="job">{{ worker.job }}</span><br>
       <div class="describe">
-        <span [innerHTML]="worker.describe"></span>
+        <span class="citation">"</span>&nbsp;
+          <span [innerHTML]="worker.describe"></span>&nbsp;
+        <span class="citation">"</span>
       </div>
     </div>
   </div>
