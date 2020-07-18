@@ -1,19 +1,16 @@
 <ng-container *ngIf="worker.display">
-  <table>
-    <tr>
-      <td>
-        <div class="container-src">
-          <div class="photo" [ngStyle]="{'background-image': 'url('+ worker.photo +')'}"></div>
-        </div>
-      </td>
-      <td>
-        <ul>
-          <li class="name">{{ worker.name }}</li>
-          <li class="job">{{ worker.job }}</li>
-          <li class="describe" style="white-space: pre-line;" [innerHTML]="worker.describe"></li>
-        </ul>
-      </td>
-    </tr>
-    <br>
-  </table>
+
+  <div class="container-worker">
+    <div class="container-photo">
+      <div class="photo" [ngStyle]="{'background-image': 'url('+ worker.photo +')'}"></div>
+    </div>
+    <div>
+      <span class="name">{{ worker.name }}</span><br>
+      <span class="job">{{ worker.job }}</span><br>
+      <div class="describe">
+        <span [innerHTML]="worker.describe"></span>
+      </div>
+    </div>
+  </div>
+
 </ng-container>

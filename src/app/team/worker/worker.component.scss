@@ -6,10 +6,23 @@ li {
   list-style: none;
 }
 
-.container-src {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.container-worker {
+  margin: 1rem;
+}
+
+.container-photo {
+  position: relative;
+  float: left;
+  padding-right: 1rem;
+}
+
+.photo {
+  width: 10rem;
+  height: 8rem;
+  border-radius: 1rem;
+  border: 0.1rem solid var(--primary);
+  background-size: cover;
+  background-position: top center;
 }
 
 .name {
@@ -26,16 +39,10 @@ li {
 }
 
 .describe {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   -webkit-font-smoothing: antialiased;
   padding-top: 0.5rem;
+  white-space: pre-line;
+  text-align: justify;
 }
 
-.photo {
-  width: 10rem;
-  height: 8rem;
-  border-radius: 1rem;
-  border: 0.1rem solid var(--primary);
-  background-size: cover;
-  background-position: top center;
-}
