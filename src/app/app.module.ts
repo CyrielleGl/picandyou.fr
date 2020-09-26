@@ -17,6 +17,7 @@ import { MaquetteInteractiveComponent } from './maquette-interactive/maquette-in
 import { WorkerComponent } from './team/worker/worker.component';
 import { BlocComponent } from './home/bloc/bloc.component';
 import { VueComponent } from './plateforme/vue/vue.component';
+import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.component';
 
 @NgModule({
 
@@ -30,7 +31,8 @@ import { VueComponent } from './plateforme/vue/vue.component';
     MaquetteInteractiveComponent,
     WorkerComponent,
     BlocComponent,
-    VueComponent
+    VueComponent,
+    MentionsLegalesComponent
   ],
 
   imports: [

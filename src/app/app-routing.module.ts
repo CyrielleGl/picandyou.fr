@@ -7,6 +7,7 @@ import { SoutienComponent } from './soutien/soutien.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { MaquetteInteractiveComponent } from './maquette-interactive/maquette-interactive.component';
+import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.component';
 
 const routes: Routes = [
   { path: 'plateforme', component: PlateformeComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'soutien', component: SoutienComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'mentions-legales', component: MentionsLegalesComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
