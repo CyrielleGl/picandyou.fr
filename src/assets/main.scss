@@ -1,5 +1,12 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Regular.ttf");
+}
+
 main {
   text-align: center;
+  font-family: 'Open Sans';
+  font-size: 0.9rem;
   width: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
