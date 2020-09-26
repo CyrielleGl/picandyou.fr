@@ -10,6 +10,6 @@
       &copy;
       <span [innerText]="yearNow"></span>&nbsp;<span [innerText]="appTitle"></span>
       •
-      <a class="link" title="Mentions légales" routerLink="/mentions-legales" routerLinkActive="active">Mentions légales</a>
+      <a class="link" title="Mentions légales" [routerLink]="['mentions-legales']" [routerLinkActive]="['active']">Mentions légales</a>
     </p>
   </div>
